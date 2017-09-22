@@ -580,7 +580,8 @@ modify.Rd.file <- function
     ## lines with more than 90 characters (which generates a NOTE on R
     ## CMD check) for some functions such as testfiles/wide.lines.R
     ## Thanks to Jannis v. Buttlar for the bug report.
-    usage.vec <- deparse(parsed[[1]], width.cutoff=50L)
+	## 50 is still too few
+    usage.vec <- deparse(parsed[[1]], width.cutoff=40L)
     utxt <- sprintf("usage{%s}\n",paste(usage.vec,collapse="\n"))
   }
   if(length(grep("usage[{]data",utxt))){
