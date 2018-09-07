@@ -1,2 +1,5 @@
 /.project
 /.RData
+.Rproj.user
+.Rhistory
+rstudio.Rproj
